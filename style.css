@@ -7,6 +7,7 @@
     --white: #fff;
     --font-size: 18px;
     --ffamily: 'Rubik';
+    --grayish-white: #fafafa;
 }
 
 * {
@@ -56,7 +57,7 @@ body {
     border-radius: 7px;
     color: var(--white);
     cursor: pointer;
-    box-shadow: 0 5px 5px gray;
+    box-shadow: 0 5px 5px var(--grayish-blue);
     border: 1px solid var(--soft-red);
 }
 
@@ -72,3 +73,64 @@ body {
     background-color: var(--white);
 }
 
+.home {
+    display: flex;
+    width: 75%;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+    margin-top: 5em;
+}
+
+.home-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.home-text h1 {
+    color: var(--very-dark-blue);
+    font-weight: 500;
+    font-size: 56px;
+}
+
+.home-text p {
+    line-height: 28px;
+    margin: 2em 0;
+    color: var(--grayish-blue);
+}
+
+.buttons {
+    display: flex;
+}
+
+.get-chrome {
+    color: var(--white);
+    padding: 1em 1.5em;
+    margin-right: 0.7em;
+    background-color: var(--soft-blue);
+    border: 1px solid var(--soft-blue);
+    cursor: pointer;
+    border-radius: 7px;
+    box-shadow: 0 5px 5px var(--grayish-blue);
+}
+
+.get-chrome:hover {
+    color: var(--soft-blue);
+    background-color: var(--white);
+}
+
+.get-firefox {
+    background-color: var(--grayish-white);
+    padding: 1em 1.5em;
+    margin-right: 0.7em;
+    color: var(--soft-blue);
+    border: 1px solid var(--grayish-white);
+    cursor: pointer;
+    border-radius: 7px;
+    box-shadow: 0 5px 5px var(--grayish-blue);
+}
+
+.get-firefox:hover {
+    background-color: var(--white);
+    border: 1px solid var(--soft-blue);
+}
