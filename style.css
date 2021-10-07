@@ -13,12 +13,15 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     font-size: var(--font-size);
     font-family: var(--ffamily);
 }
+
+/*navigation */
 
 #nav-page {
     display: flex;
@@ -72,6 +75,8 @@ body {
 #login:hover {
     background-color: var(--white);
 }
+
+/*home section*/
 
 .home {
     display: flex;
@@ -134,3 +139,29 @@ body {
     background-color: var(--white);
     border: 1px solid var(--soft-blue);
 }
+
+.home {
+    position: relative;
+    flex-basis: 50%;
+}
+
+.home-image {
+    position: relative;
+}
+
+.home-image::after {
+	content: " ";
+	width: 80%;
+	background: var(--soft-blue);
+	border-radius: 0 0 0 50%;
+	position: absolute;
+	right: 0;
+	height: 75%;
+	top: 25%;
+    z-index: -1;
+}
+.home-image img {
+    width: 95%;
+}
+
+/*features section*/
