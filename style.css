@@ -452,6 +452,7 @@ details:hover {
     margin-bottom: 1.5em;
     margin-top: 0.5em;
     font-weight: 400;
+    text-transform: uppercase;
 }
 
 #contact h2 {
@@ -498,6 +499,53 @@ form input[type="submit"]:hover{
     margin: auto;
     font-size: 13px;
     border-radius: 5px;
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--very-dark-blue);
+    padding: 1em 0;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2em;
+    margin-bottom: 1.5em;
+}
+
+.navbar ul {
+    display: flex;
+    margin-left: 15%;
+}
+
+.navbar ul li {
+    list-style: none;
+    justify-content: left;
+    margin: 0 1em;
+}
+
+.navbar ul li a {
+    color: var(--white);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover{
+    color: var(--soft-red);
+}
+
+.social {
+    display: flex;
+}
+
+.item {
+    margin-left: 2em;
+}
+
+.item:hover {
+    cursor: pointer;
 }
 
 
