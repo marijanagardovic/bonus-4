@@ -159,13 +159,10 @@ body {
 	background: var(--soft-blue);
 	border-radius: 0 0 0 50%;
 	position: absolute;
-	right: 0;
+	right: -27%;
 	height: 75%;
 	top: 25%;
     z-index: -1;
-}
-.home-image img {
-    width: 95%;
 }
 
 /*features section*/
@@ -174,7 +171,7 @@ body {
     display: flex;
     flex-direction: column;
     margin: auto;
-    width: 50%;
+    width: 70%;
     margin-top: 15em;
     text-align: center;
     margin-bottom: 3em;
@@ -185,73 +182,76 @@ body {
     font-size: 30px;
 }
 
+#features .subtitle {
+    line-height: 28px;
+    color: var(--grayish-blue);
+    width: 50%;
+    margin: auto;
+}
+
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border-bottom: 1px solid var(--grayish-blue);
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+  }
+  
+  /* Style the buttons inside the tab */
+.tab button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 20px 22px;
+    transition: 0.3s;
+    font-size: 17px;
+    width: 100%;
+  }
+  
+  /* Change background color of buttons on hover */
+.tab button:hover {
+    color: var(--soft-red);
+    border-bottom: 3px solid var(--soft-red);
+  }
+
+  /* Create an active/current tablink class */
+.tab button.active {
+    color: var(--soft-red);
+    border-bottom: 3px solid var(--soft-red);
+  }
+  
+  /* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    margin-top: 3em;
+}  
+
+.tabcontent .items {
+    display: flex;
+    justify-content: space-between;
+}
+
 #features p {
     line-height: 28px;
     color: var(--grayish-blue);
+    justify-content: left;
 }
 
-.items-names {
+.items-desc {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 2em;
-    margin: 5% auto;
-    border-bottom: 1px solid var(--grayish-blue);
-    width: 100%;
-}
-
-.items-names label { 
-    padding: 5% 0;
-    cursor: pointer;
-}
-
-.items-names label:hover {
-    color: var(--soft-red);
-}
-
-.active-item {
-    border-bottom: 4px solid var(--soft-red);
-}
-
-.info input{
-    display: none;
-}
-
-.info .info-desc {
-    display: none;
-}
-
-.info input:checked + .info-desc {
-    display: flex;
-}
-
-.info-desc {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.info-image {
-    position: relative;
-    flex-basis: 50%;
-    justify-content: space-between;
-}
-
-.info-image img {
-    width: 75%;
-}
-
-.info-text {
-    flex-basis: 45%;
+    flex-direction: column;
+    margin: auto;
+    padding: 2em 2em;
     text-align: left;
 }
 
-#features .info-text p{
-    margin: 2em 0;
-    width: 80%;
-}
-
 .more-info {
+    width: 25%;
     color: var(--white);
     padding: 1em 1.5em;
     margin-right: 0.7em;
@@ -260,21 +260,30 @@ body {
     cursor: pointer;
     border-radius: 7px;
     box-shadow: 0 5px 5px var(--grayish-blue);
+    margin-top: 2em;
 }
 
-.more-info:hover {
+.more:hover {
     color: var(--soft-blue);
     background-color: var(--white);
 }
 
-.info-image::after {
-    position: absolute;
+.items-desc h2 {
+    margin-bottom: 2em;
+}
+
+.feature-img {
+    position: relative;
+}
+
+.feature-img::after {
 	content: " ";
-	width: 75%;
+	width: 90%;
 	background: var(--soft-blue);
 	border-radius: 0 0 50% 0 ;
-	left: 0;
-	height: 100%;
-	top: 20%;
+	position: absolute;
+	left: -55%;
+	height: 90%;
+	top: 25%;
     z-index: -1;
 }
