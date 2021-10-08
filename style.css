@@ -81,7 +81,7 @@ body {
     background-color: var(--white);
 }
 
-/*home section*/
+/* Home section */
 
 .home {
     display: flex;
@@ -166,7 +166,7 @@ body {
     z-index: -1;
 }
 
-/*features section*/
+/* Features section */
 
 #features {
     display: flex;
@@ -284,7 +284,7 @@ body {
     z-index: -1;
 }
 
-/* pricing section */
+/* Download the extension */
 
 #pricing {
     display: flex;
@@ -363,4 +363,77 @@ body {
 
 .extension h3 {
     margin-top: 1em;
+}
+
+/* Frequently Asked Questions */
+
+#questions {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 75%;
+    margin-top: 10em;
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+#questions h2 {
+    margin-bottom: 1.8em;
+    font-size: 30px;
+}
+
+#questions .question-desc {
+    line-height: 28px;
+    color: var(--grayish-blue);
+    width: 50%;
+    margin: auto;
+    margin-bottom: 1.5em;
+}
+
+.faq {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 2em;
+}
+
+details {
+    border-bottom: 1px solid gray;
+    padding: 2em 2em;
+    text-align: left;
+}
+
+details summary {
+    margin-top: 0.2em;
+    color: var(--very-dark-blue);
+}
+
+details p {
+    margin-top: 1em;
+    line-height: 28px;
+    color: var(--grayish-blue);
+}
+
+.faq-info {
+    display: flex;
+    margin: auto;
+    color: var(--white);
+    padding: 1em 1.5em;
+    background-color: var(--soft-blue);
+    border: 1px solid var(--soft-blue);
+    cursor: pointer;
+    border-radius: 7px;
+    box-shadow: 0 5px 5px var(--grayish-blue);
+}
+
+.faq-info:hover {
+    color: var(--soft-blue);
+    background-color: var(--white);
+}
+
+details:hover {
+    color: var(--soft-red);
+    background:white;
+    cursor: pointer;
 }
