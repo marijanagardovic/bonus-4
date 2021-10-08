@@ -391,7 +391,7 @@ body {
 }
 
 .faq {
-    width: 70%;
+    width: 67%;
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -437,3 +437,69 @@ details:hover {
     background:white;
     cursor: pointer;
 }
+
+/* Sign-up ---- contact section */
+
+#contact {
+    background-color: var(--soft-blue);
+    margin-top: 5%;
+    padding: 2% 0 5% 0;
+    text-align: center;
+    color: var(--white);
+}
+
+#contact p {
+    margin-bottom: 1.5em;
+    margin-top: 0.5em;
+    font-weight: 400;
+}
+
+#contact h2 {
+    margin-bottom: 2em;
+    font-weight: 500;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    width: 22%;
+    margin: auto;
+}
+
+form input {
+    border: none;
+    border-radius: 6px;
+    padding: 0.8em 2em;
+    outline: none;
+}
+
+form label input[type="text"]{
+    width: 100%;
+    padding: 0.8em;
+}
+
+form input[type="submit"]{
+    border: 1px solid var(--soft-red);
+    background-color: var(--soft-red);
+    color: var(--white);
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover{
+    background-color: var(--white);
+    color: var(--soft-red);
+}
+
+.result {
+    background-color: var(--soft-red);
+    color: var(--white);
+    width: 22%;
+    display: flex;
+    margin: auto;
+    font-size: 13px;
+    border-radius: 5px;
+}
+
+
+
+
