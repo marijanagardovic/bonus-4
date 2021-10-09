@@ -1,4 +1,5 @@
 //feature tabs
+
 function openTab(evt, tabName) {
 	var i, tabcontent, tablinks;
 	tabcontent = document.getElementsByClassName("tabcontent");
@@ -13,7 +14,7 @@ function openTab(evt, tabName) {
 	evt.currentTarget.className += " active";
 }
 
-  // email validation
+// email validation
 
 const emailRequest = document.querySelector(".request");
 
@@ -34,3 +35,5 @@ function submitEmail(e){
 };
 
 emailRequest.addEventListener("click", submitEmail);
+
+// hamburger ==============

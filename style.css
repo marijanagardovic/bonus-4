@@ -552,6 +552,7 @@ footer {
     cursor: pointer;
 }
 
+
 @media (max-width: 1000px) {
     .home {
         display: flex;
@@ -662,5 +663,6 @@ footer {
         border-bottom: 3px solid var(--grayish-blue);
     }
 }
+
 
 
