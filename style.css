@@ -284,6 +284,10 @@ body {
     z-index: -1;
 }
 
+#Bookmark {
+    display: block;
+}
+
 /* Download the extension */
 
 #pricing {
