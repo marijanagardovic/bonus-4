@@ -552,6 +552,10 @@ footer {
     cursor: pointer;
 }
 
+.item:hover path {
+    fill: var(--soft-red);
+}
+
 
 @media (max-width: 1000px) {
     .home {
